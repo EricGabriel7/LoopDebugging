@@ -15,8 +15,13 @@ public class LoopDebugging {
 
         while (userInput != "") {
             System.out.println(userInput);
-            System.out.println("Enter more characters");
             userInput = keyboard.next();
+            System.out.println("Do you want to keep going? Y/N");
+            String answer = keyboard.next();
+            if (answer.equalsIgnoreCase("Y")){
+                continue;
+            }
+            break;
             }
 
     }
